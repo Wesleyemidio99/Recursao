@@ -18,9 +18,18 @@ void exercicioDois(int numero,int parada){
     }
 }
 
+int numeroExponencial(int base, int expoente){
+    if(expoente > 1){
+        return base * numeroExponencial( base,expoente -1);
+    }
+    return base;
+}
+
 int main() {
+
     //numerosImpares(2,10);
-    exercicioDois(1,5);
+    //exercicioDois(1,5);
+    printf("%d",numeroExponencial(2,5));
     return 0;
 }
 
