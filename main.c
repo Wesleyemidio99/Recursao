@@ -10,8 +10,17 @@ void numerosImpares(int numero, int parada){
     }
 }
 
+void exercicioDois(int numero,int parada){
+    if(parada != 0){
+        printf("%d\n",numero);
+        numero+=1;
+        exercicioDois( (numero *numero), parada - 1);
+    }
+}
 
 int main() {
     //numerosImpares(2,10);
+    exercicioDois(1,5);
     return 0;
 }
+
